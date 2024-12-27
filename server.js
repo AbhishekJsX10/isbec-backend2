@@ -20,7 +20,7 @@ connectDB();
 // CORS configuration
 app.use(cors({
     origin: process.env.NODE_ENV === 'production' 
-        ? ['https://isbec.com', 'https://www.isbec.com'] 
+        ? ['https://isbec-frontend2.vercel.app', 'https://isbec-frontend2.vercel.app'] 
         : ['http://localhost:3000', 'http://localhost:5173'],
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization'],
